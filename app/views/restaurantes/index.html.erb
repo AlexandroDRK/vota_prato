@@ -16,4 +16,5 @@
       <td><%= restaurante.especialidade %> </td>
     </tr>
   <% end %>
+  <td><%= link_to( 'Export' ,{ :controller => :restaurantes, :action => :index , format: 'csv'})%></td>
 </table>
