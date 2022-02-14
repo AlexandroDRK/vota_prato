@@ -1,0 +1,20 @@
+<h1>Exibindo Restaurante</h1>
+
+<p>
+ <b>Nome: </b>
+  <%= @restaurantes.nome %>
+</p>
+
+<p>
+  <b>Endereço: </b>
+  <%= @restaurantes.endereco %>
+</p>
+
+<p>
+  <b>Especialidade: </b>
+  <%= @restaurantes.especialidade %>
+</p>
+
+<p>
+ <b><%=link_to( "PDF",{ :controller => :restaurantes, :action => :show , format: 'pdf'})%></b>
+</p>
