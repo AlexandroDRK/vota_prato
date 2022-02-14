@@ -6,7 +6,8 @@ Rails.application.routes.draw do
 end
 
 VotaPrato::Application.routes.draw do
-match 'restaurantes', controller: 'restaurantes', action: 'index', via: 'get'
+  resources :restaurantes
+#match 'restaurantes', controller: 'restaurantes', action: 'index', via: 'get'
 end
 
 VotaPrato::Application.routes.draw do
